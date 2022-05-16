@@ -2,6 +2,7 @@
 layout: default
 item-meta: true
 ---
+
 <div class="container py-3">
 
     {% include item/breadcrumbs.html %}
@@ -46,7 +47,98 @@ item-meta: true
         {% endif %}
     </div>
 
+    <div class="flipContainer">
+        <div id="book">
+                    <div class="page page-cover page-cover-top" data-density="hard">
+            <div class="page-content">
+                <div class="page-image" style="background-image: url('https://awikhigan.irlh.org/gen/wl/?id=990rbWLcIhwr0P7OXhSLTPFP8J3anGBP')"></div>
+            </div>
+        </div>
+        <div class="page" data-density="hard">
+            <div class="page-content">
+                <div class="page-image" style="background-image: url('https://awikhigan.irlh.org/gen/wl/?id=zzjOhBD4IAzcYPP8izgkbOP66O81u4X9')"></div>
+            </div>
+        </div>
+        <!-- PAGES .... -->
+        <div class="page" data-density="hard">
+            <div class="page-content">
+                <div class="page-image" style="background-image: url('https://awikhigan.irlh.org/gen/wl/?id=kqg4LzwuHJVBtcBM5bpebIs2Y5jyQRd4 ')"></div>
+            </div>
+        </div>
+        <div class="page" data-density="hard">
+            <div class="page-content">
+                <div class="page-image" style="background-image: url('https://awikhigan.irlh.org/gen/wl/?id=QSDtatjTU9aMn00loZe34qabXFBAZE2Q')"></div>
+            </div>
+        </div>
+        <div class="page" data-density="hard">
+            <div class="page-content">
+                <div class="page-image" style="background-image: url('https://awikhigan.irlh.org/gen/wl/?id=fUxGPU4eCJGw9XEqMaDY70QVi7YPeB6m')"></div>
+            </div>
+        </div>
+        <div class="page" data-density="hard">
+            <div class="page-content">
+                <div class="page-image" style="background-image: url('https://awikhigan.irlh.org/gen/wl/?id=7aBDEA9qysPK3KZ05bI9dFtIHgySlD1B ')"></div>
+            </div>
+        </div>
+        <div class="page" data-density="hard">
+            <div class="page-content">
+                <div class="page-image" style="background-image: url('https://awikhigan.irlh.org/gen/wl/?id=fVyZq6oBvdVF7SuB4HbwibIUeDcMWI5w ')"></div>
+            </div>
+        </div>
+        <div class="page" data-density="hard">
+            <div class="page-content">
+                <div class="page-image" style="background-image: url('https://awikhigan.irlh.org/gen/wl/?id=vOgVTyjSxtTrlVw2KRQ8WpPNUHKKktjJ ')"></div>
+            </div>
+        </div>
+        <div class="page" data-density="hard">
+            <div class="page-content">
+                <div class="page-image" style="background-image: url('https://awikhigan.irlh.org/gen/wl/?id=nlgroR4hS3a5d3f9htgLbybZZhPcXGXX ')"></div>
+            </div>
+        </div>
+        <div class="page" data-density="hard">
+            <div class="page-content">
+                <div class="page-image" style="background-image: url('https://awikhigan.irlh.org/gen/wl/?id=o88dqMlR8IUoc5HiBroQMzZRh1ZBFnFR')"></div>
+            </div>
+        </div>
+        <div class="page" data-density="hard">
+            <div class="page-content">
+                <div class="page-image" style="background-image: url('https://awikhigan.irlh.org/gen/wl/?id=BotZcArYcKOPpjtjBsPkUQKygFB1P164 ')"></div>
+            </div>
+        </div>
+        <div class="page" data-density="hard">
+            <div class="page-content">
+                <div class="page-image" style="background-image: url('https://awikhigan.irlh.org/gen/wl/?id=xZAqOqBQ6UdGJRqzJ1n1l1l2ST4Vm2vI')"></div>
+            </div>
+        </div>
+                </div>
+            </div>
+            <div class="flipInsContainer">
+                <p class="flipIns" onclick="flipPrevPage">Previous Page</p>
+                <p class="flipIns" onclick="flipNextPage">Next Page</p>
+            </div>
+        </div>
+
     {%- if site.data.theme.browse-buttons == true -%}
         {% include item/browse-buttons.html %}
     {%- endif -%}
 </div>
+<script defer>
+
+// import { PageFlip } from 'page-flip';
+
+    let pageFlip = new PageFlip(document.getElementById('book'),
+                {
+ 
+                    drawShadow: false,
+                    width: 500, 
+                    height: 750, 
+
+                    size: "fixed",
+
+                    mobileScrollSupport: false 
+                }
+            );
+    pageFlip.loadFromHTML(document.querySelectorAll(".page"));
+
+
+</script>

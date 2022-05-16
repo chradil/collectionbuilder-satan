@@ -2,3 +2,34 @@
     Put your custom SCSS here! 
     This allows you to override any CollectionBuilder or Bootstrap CSS without modifying the base theme files directly.
 */
+#book{
+        margin:auto;
+        width:800px;
+    }
+    .page-image{
+        background-size: 500px;
+        width: 500px;
+        height: 750px;
+
+    }
+
+    .flipInsContainer {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10%;
+        margin: -10px auto 0 auto;
+        grid-gap: 10px;
+        max-width: 1140px;
+        width: 90%;
+    }
+    .flipIns {
+        cursor: pointer;
+        background-color: white;
+        border-radius: 20px;
+        padding: 6px 12px;
+        color: black;
+        font-weight: bold;
+        font-family: "Cabin Sketch";
+        white-space: nowrap;
+        border: 2px solid black;
+    }
